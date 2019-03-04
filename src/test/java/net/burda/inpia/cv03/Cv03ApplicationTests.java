@@ -1,6 +1,6 @@
 package net.burda.inpia.cv03;
 
-import net.burda.inpia.cv03.Controllers.HelloWorldController;
+import net.burda.inpia.cv03.controller.HelloWorldController;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

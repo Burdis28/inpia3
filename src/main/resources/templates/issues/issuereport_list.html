@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>List</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+<div>
+  <h2>Issues</h2>
+  <br/>
+  <table>
+    <tr>
+      <th>Url</th>
+      <th>Description</th>
+    </tr>
+    <th:block th:each="issue : ${issues}">
+      <tr>
+        <td><a th:href="@{${issue.url}}" th:text="${issue.url}"></a></td>
+        <td th:text="${issue.description}">...</td>
+      </tr>
+    </th:block>
+  </table>
+</div>
+</body>
+</html>
+
